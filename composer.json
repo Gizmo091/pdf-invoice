@@ -1,5 +1,5 @@
 {
-    "name": "konekt/pdf-invoice",
+    "name": "zmog/pdf-invoice",
     "description": "Library to generate PDF invoices",
     "type": "library",
     "license": "GPL-2.0-or-later",
@@ -11,6 +11,10 @@
         {
             "name": "Attila Fulop",
             "homepage": "https://github.com/fulopattila122"
+        },
+        {
+            "name": "Mathieu Vedie",
+            "homepage": "https://github.com/Gizmo091"
         }
     ],
     "require": {
