@@ -229,30 +229,12 @@ Hide the issuer and client header row
 $invoice->hideToFromHeaders();
 ```
 
-### Add custom text or general terms
+### Add custom text or general terms in extra-page
 
-Enable extra page with custom text, default is false
-
-```php
-$invoice->setAddTermsPage(true);
-```
-
-Define number of columns, default is 1
+Path to text file or raw text
 
 ```php
-$invoice->setAddTermsPageColumns(2);
-```
-
-Path to text file for 1 column
-
-```php
-$invoice->setAddTermsPageText1('example_terms01.txt');
-```
-
-Optional path to text file for 2nd column
-
-```php
-$invoice->setAddTermsPageText1('example_terms02.txt');
+$invoice->addTermsPage('col1.txt','col2.text','content of 3rd column');
 ```
 
 ### Adding Items

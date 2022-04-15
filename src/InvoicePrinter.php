@@ -236,11 +236,11 @@ class InvoicePrinter extends FPDF
         $this->referenceformat = [$decimals, $thousands_sep, $alignment, $space];
     }
 
-//    public function setAddTermsPage($data)
-//    {
-//        $this->pageTerms = $data;
-//    }
-
+    /**
+     * @param string ...$columns_content Raw text of the column, or source file for text
+     *
+     * @return void
+     */
     public function addTermsPage(string ...$columns_content)
     {
         $this->pageTerms[] = $columns_content;
